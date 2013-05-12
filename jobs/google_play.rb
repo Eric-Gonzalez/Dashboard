@@ -25,7 +25,7 @@ SCHEDULER.every '10m', :first_in => 0 do |job|
   response = http.request(Net::HTTP::Get.new("/store/apps/details?id=#{appId}"))
   if response.code != "200"
     puts "google play store website communication (status-code: #{response.code})\n#{response.body}"
-  else
+  else    
     # capture average rating using regexp
     average_rating = /average-rating-value">([\d,.]+)<\/div>/.match(response.body)
     average_rating = average_rating[1].gsub(",", ".").to_f
