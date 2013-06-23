@@ -15,8 +15,8 @@ SCHEDULER.every '10m', :first_in => 0 do |job|
       
   total_distance = /<strong>([\d,.]+)<abbr class='unit' title='miles'>mi<\/abbr><\/strong>
 <div class='label'>Total Distance<\/div>/.match(response)
-
-  total_distance = total_distance[1].to_f
+  
+  total_distance = total_distance[1].gsub(/,(?=\d{3}\b)/, '').to_i
 
   send_event('strava_total_distance', current: total_distance)
 
