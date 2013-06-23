@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'xmlsimple'
 
-username = 'PlasticGnome'
+username = ENV['LAST_FM_ID']
 api_key = '83199d080e11efcb696e957c0d6002f7'
 
 SCHEDULER.every '1m', :first_in => 0 do |job|

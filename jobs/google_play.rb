@@ -13,7 +13,7 @@ require 'net/http'
 
 # Config
 # ------
-appId = ENV['GOOGLE_PLAY_ID'] || 'com.forty_eightdp.kana'
+appId = ENV['GOOGLE_PLAY_ID']
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   

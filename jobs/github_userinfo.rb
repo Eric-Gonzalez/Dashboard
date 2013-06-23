@@ -7,7 +7,7 @@ require 'json'
 # Config
 # ------
 # example for tracking single user repositories
-github_username = ENV['GITHUB_USERINFO_USERNAME'] || 'users/Eric-Gonzalez'
+github_username = ENV['GITHUB_USERINFO_USERNAME']
 # example for tracking an organisations repositories
 # github_username = 'orgs/foobugs'
 

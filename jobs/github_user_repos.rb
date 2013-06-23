@@ -14,7 +14,7 @@ require 'json'
 # example for tracking single user repositories
 # github_username = 'users/ephigenia'
 # example for tracking an organisations repositories
-github_username = ENV['GITHUB_USER_REPOS_USERNAME'] || 'users/Eric-Gonzalez'
+github_username = ENV['GITHUB_USER_REPOS_USERNAME']
 # number of repositories to display in the list
 max_length = 7
 # order the list by the numbers

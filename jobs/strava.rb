@@ -1,9 +1,7 @@
 #!/usr/bin/env ruby
 require 'net/http'
 
-appId = ENV['GOOGLE_PLAY_ID'] || 'com.forty_eightdp.kana'
-
-athlete = 238937
+athlete = ENV['STRAVA_ID']
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   
