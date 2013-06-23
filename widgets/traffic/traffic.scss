@@ -1,0 +1,78 @@
+.p45-colour {
+  background-color: #d71717; }
+.widget-traffic {
+  background-color: #ec663c; }
+  .widget-traffic .title {
+    color: rgba(255, 255, 255, 0.7); }
+  .widget-traffic .ribbon {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+    width: 65%;
+    position: relative;
+    background: #ba89b6;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0.6em 0.1em 0.6em;
+    /* Adjust to suit */
+    margin: 2em auto 3em;
+    /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+    margin-top: 0px;
+    margin-bottom: 25px; }
+  .widget-traffic .ribbon:before, .widget-traffic .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #986794;
+    z-index: -1; }
+  .widget-traffic .ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent; }
+  .widget-traffic .ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent; }
+  .widget-traffic .ribbon .ribbon-content:before, .widget-traffic .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: -1em; }
+  .widget-traffic .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em; }
+  .widget-traffic .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0; }
+  .widget-traffic .non-semantic-protector {
+    position: relative;
+    z-index: 1; }
+  .widget-traffic ol, .widget-traffic ul {
+    margin: 0 15px;
+    text-align: left; }
+  .widget-traffic ol {
+    list-style-position: inside; }
+  .widget-traffic li:first-child {
+    font-weight: bold; }
+  .widget-traffic li {
+    margin-bottom: 12px;
+    font-size: 18px; }
+  .widget-traffic .drive-time {
+    color: rgba(255, 255, 255, 0.7); }
+  .widget-traffic .drive-road {
+    position: relative;
+    left: 35px;
+    font-size: 10px;
+    display: block; }
+  .widget-traffic .more-info {
+    color: rgba(255, 255, 255, 0.7); }
+  .widget-traffic .updated-at {
+    color: rgba(255, 255, 255, 0.7); }
+
+.purple {
+  background-color: #b91be0; }
+
+.widget.widget-traffic {
+  vertical-align: top; }
