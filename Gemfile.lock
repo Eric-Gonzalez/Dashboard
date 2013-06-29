@@ -32,7 +32,6 @@ GEM
     rufus-scheduler (2.0.18)
       tzinfo (>= 0.3.23)
     sass (3.2.7)
-    simple-rss (1.2.3)
     sinatra (1.3.6)
       rack (~> 1.4)
       rack-protection (~> 1.3)
@@ -65,5 +64,4 @@ DEPENDENCIES
   dashing
   json
   nokogiri
-  simple-rss
   xml-simple
