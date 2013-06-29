@@ -6,7 +6,9 @@ require 'json'
 office_location = URI::encode(ENV['HOME_GEO_CODE'])
 key			    = URI::encode(ENV['TOMTOM_API_KEY'])
 locations 	 = []
-locations << { name: "Sam", location: URI::encode('-25.764803,28.34625') } # example location format
+locations << { name: "Violet Crown", location: URI::encode('30.2654559,-97.74821459999998')}
+locations << { name: "Thunderbird", location: URI::encode('30.330823,-97.73192999999998')}
+locations << { name: "IBM", location: URI::encode('30.4005547,-97.71570150000002') }
  
 SCHEDULER.every '10m', :first_in => '15s' do |job|
 	routes = []
