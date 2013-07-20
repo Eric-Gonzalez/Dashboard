@@ -3,7 +3,7 @@ require 'nest_thermostat'
 nest_user = ENV['NEST_USER']
 nest_password = ENV['NEST_PASSWORD']
 
-SCHEDULER.every '30s', :first_in => 0 do |job|
+SCHEDULER.every '1m', :first_in => 0 do |job|
 	nest = NestThermostat::Nest.new({email: nest_user,password: nest_password})
 	first_nest = nest.status["shared"][nest.device_id]
 	temp = nest.temperature; 
