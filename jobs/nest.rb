@@ -19,6 +19,8 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
 	
 	if(nest.leaf)
 		leaf_src = "assets/nest_leaf.png"
+	else
+		leaf_src = "assets/nest_leaf_trans.png"
 	end
 
 	send_event('nest', { temp: temp.to_i , state: state, away: away, leaf: leaf_src })
