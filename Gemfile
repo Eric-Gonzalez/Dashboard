@@ -1,5 +1,6 @@
 source :rubygems
 
+gem 'market_bot'
 gem 'json'
 gem 'dashing'
 gem 'nokogiri'
